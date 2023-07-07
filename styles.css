@@ -26,8 +26,19 @@ p{
 .author{
     font-size: 13px;
 }
+#card-container{
+    padding: 2% 20%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    width: 70%;
+    height: auto;
+    margin-left: 5%;
+}
 
 .card{
-    display: grid;
-    grid-template-columns: repeat(6 "1fr");
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 2rem;
 }
+

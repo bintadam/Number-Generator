@@ -25,12 +25,18 @@ function isPrime(n){
 }
 
 $(document).ready(function(){
+    let cardContainer = $('<div id="card-container"></div>');
     for(let number of numbers){
-        let card = $('<div class="card>' + number + '</div>')
-        if(number%2 === 0){
-            $(this).css("background", "green")
-        }else if(number%2 !=0){
-            $(this).css("background", "yellow")
+        let card = $('<div class="card">' + number + '</div>')
+        if(isPrime(number)){
+            card.css("background", "rgb(249, 97, 97)")
+        }else if(number%2 === 0){
+            card.css("background", "rgb(78, 151, 103)")
+        }else if(number%2 !== 0){
+            card.css("background", "rgba(235, 235, 63, 0.896)")
         }
+        cardContainer.append(card)
     }
+
+    $("body").append(cardContainer);
 })
