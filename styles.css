@@ -42,3 +42,32 @@ p{
     padding: 0.5rem 2rem;
 }
 
+@media only screen and (max-width:768px){
+    body{
+        padding: 0%;   
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    
+    p{
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    .author{
+        font-size: 13px;
+    }
+
+    #card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        height: auto;
+    }
+    .card{
+        font-size: 1.1rem;
+        color: white;
+        padding: 0.3rem 1.2rem;
+    }
+}
