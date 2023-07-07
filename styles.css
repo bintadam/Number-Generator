@@ -7,5 +7,22 @@
 }
 
 body{
-    
+    padding: 0% 5%;   
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.author{
+    font-size: 13px;
 }
