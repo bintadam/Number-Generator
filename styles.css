@@ -26,3 +26,8 @@ p{
 .author{
     font-size: 13px;
 }
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(6 "1fr");
+}

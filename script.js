@@ -4,11 +4,7 @@ function* range(start, end, step=1){
     }
 }
 
-const numbers = [];
-
-for(let i of range(0, 101)){
-    numbers.push(i);
-}
+const numbers = Array.from(range(0, 101));
 
 function isPrime(n){
     if(n<= 1){
@@ -29,9 +25,8 @@ function isPrime(n){
 }
 
 $(document).ready(function(){
-    const card = $('.card')
-    isPrime().css()
-    for(number in numbers){
+    for(let number of numbers){
+        let card = $('<div class="card>' + number + '</div>')
         if(number%2 === 0){
             $(this).css("background", "green")
         }else if(number%2 !=0){
